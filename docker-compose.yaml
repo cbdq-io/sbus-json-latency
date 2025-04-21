@@ -1,0 +1,49 @@
+---
+services:
+  emulator:
+    container_name: "emulator"
+    depends_on:
+      sqledge:
+        condition: service_healthy
+    environment:
+      SQL_SERVER: sqledge
+      MSSQL_SA_PASSWORD: "Secret123"
+      ACCEPT_EULA: "Y"
+    image: mcr.microsoft.com/azure-messaging/servicebus-emulator:latest
+    ports:
+      - "5671:5671"
+      - "5672:5672"
+      - "8080:8080"
+    volumes:
+      - "./sbus-landing-config.json:/ServiceBus_Emulator/ConfigFiles/Config.json"
+
+  sbus-json-latency:
+    build: .
+    command: /bin/sh -c "sleep infinity"
+    container_name: sbus-json-latency
+    env_file:
+      - ./tests/resources/test.env
+
+  sqledge:
+    container_name: "sqledge"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Secret123"
+    healthcheck:
+      test: timeout 1 bash -c 'cat < /dev/null > /dev/tcp/127.0.0.1/1433'
+    image: "mcr.microsoft.com/azure-sql-edge:latest"
+
+  isready:
+    build: ./tests/resources/isready
+    command:
+      - "-c"
+      - "Endpoint=sb://emulator;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
+      - "-f"
+      - "/usr/local/etc/Config.json"
+      - "-v"
+    container_name: isready
+    depends_on:
+      emulator:
+        condition: service_started
+    volumes:
+      - "./sbus-landing-config.json:/usr/local/etc/Config.json"
