@@ -1,0 +1,8 @@
+bandit
+flake8
+flake8-docstrings
+flake8-quotes
+isort
+radon
+testinfra-bdd
+yamllint
