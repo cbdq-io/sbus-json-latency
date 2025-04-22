@@ -1,3 +1,7 @@
+.EXPORT_ALL_VARIABLES:
+
+TAG = 0.1.0
+
 all: lint build test
 
 build:
@@ -13,6 +17,9 @@ lint:
 	flake8
 	bandit -qr .
 	docker run --rm -i hadolint/hadolint < Dockerfile
+
+tag:
+	@echo $(TAG)
 
 test:
 	docker compose run --rm isready
