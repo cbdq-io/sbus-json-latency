@@ -63,7 +63,17 @@ def give_update(latencies: list[int]) -> None:
         A list of all the latency readings.
     """
     average = int(sum(latencies) / len(latencies)) if latencies else 0
-    logger.info(f'messageCount {len(latencies)} averageLatencyMilliSeconds {average}')
+
+    if average:
+        max_latency = max(latencies)
+        min_latency = min(latencies)
+    else:
+        max_latency = 0
+        min_latency = 0
+
+    message = f'messageCount {len(latencies)} averageLatencyMilliSeconds {average} '
+    message += f'maxLatencyMilliSeconds {max_latency} minLatencyMilliSeconds {min_latency}'
+    logger.info(message)
 
 
 with ServiceBusClient.from_connection_string(conn_str) as client:
