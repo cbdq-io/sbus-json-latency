@@ -18,11 +18,13 @@ services:
       - "./sbus-landing-config.json:/ServiceBus_Emulator/ConfigFiles/Config.json"
 
   sbus-json-latency:
-    build: .
+    build:
+      context: .
     command: /bin/sh -c "sleep infinity"
     container_name: sbus-json-latency
     env_file:
       - ./tests/resources/test.env
+    image: sbus-json-latency:latest
 
   sqledge:
     container_name: "sqledge"
