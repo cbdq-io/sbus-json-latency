@@ -1,11 +1,15 @@
 # Changelog
 
 
-## Unreleased
+## 0.2.0 (2025-06-24)
 
 ### Features
 
 * Add details of the max/min latency in the log output. [Ben Dalling]
+
+### Build
+
+* Release/0.2.0. [Ben Dalling]
 
 ### Continuous Integration
 
