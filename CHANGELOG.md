@@ -3,7 +3,28 @@
 
 ## Unreleased
 
+### Fix
+
+* Bump Trivy action. [Ben Dalling]
+
+* Skip gitchangelog for dependabot. [Ben Dalling]
+
 ### Build
+
+* Bump actions/checkout from 4 to 5. [dependabot[bot]]
+
+  Bumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.
+  - [Release notes](https://github.com/actions/checkout/releases)
+  - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+  - [Commits](https://github.com/actions/checkout/compare/v4...v5)
+
+  ---
+  updated-dependencies:
+  - dependency-name: actions/checkout
+    dependency-version: '5'
+    dependency-type: direct:production
+    update-type: version-update:semver-major
+  ...
 
 * Bump aquasecurity/trivy-action from 0.31.0 to 0.32.0. [dependabot[bot]]
 
