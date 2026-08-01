@@ -50,7 +50,7 @@ jobs:
         run: make test
 
       - name: Trivy Scan
-        uses: aquasecurity/trivy-action@0.36.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: sbus-json-latency:latest
           scanners: vuln
