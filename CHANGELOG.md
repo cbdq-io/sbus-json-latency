@@ -3,6 +3,10 @@
 
 ## Unreleased
 
+### Fix
+
+* Skip gitchangelog for dependabot. [Ben Dalling]
+
 ### Build
 
 * Bump aquasecurity/trivy-action from 0.31.0 to 0.32.0. [dependabot[bot]]
