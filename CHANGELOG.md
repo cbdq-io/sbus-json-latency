@@ -11,6 +11,20 @@
 
 ### Build
 
+* Bump actions/setup-python from 5 to 7. [dependabot[bot]]
+
+  Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5 to 7.
+  - [Release notes](https://github.com/actions/setup-python/releases)
+  - [Commits](https://github.com/actions/setup-python/compare/v5...v7)
+
+  ---
+  updated-dependencies:
+  - dependency-name: actions/setup-python
+    dependency-version: '6'
+    dependency-type: direct:production
+    update-type: version-update:semver-major
+  ...
+
 * Bump actions/checkout from 4 to 5. [dependabot[bot]]
 
   Bumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.
