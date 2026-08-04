@@ -11,6 +11,20 @@
 
 ### Build
 
+* Bump aquasecurity/trivy-action from 0.32.0 to 0.36.0. [dependabot[bot]]
+
+  Bumps [aquasecurity/trivy-action](https://github.com/aquasecurity/trivy-action) from 0.32.0 to 0.36.0.
+  - [Release notes](https://github.com/aquasecurity/trivy-action/releases)
+  - [Commits](https://github.com/aquasecurity/trivy-action/compare/v0.32.0...v0.36.0)
+
+  ---
+  updated-dependencies:
+  - dependency-name: aquasecurity/trivy-action
+    dependency-version: 0.36.0
+    dependency-type: direct:production
+    update-type: version-update:semver-minor
+  ...
+
 * Bump github/codeql-action from 3 to 4.37.3. [dependabot[bot]]
 
   Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3 to 4.37.3.
