@@ -11,6 +11,21 @@
 
 ### Build
 
+* Bump actions/checkout from 5 to 7. [dependabot[bot]]
+
+  Bumps [actions/checkout](https://github.com/actions/checkout) from 5 to 7.
+  - [Release notes](https://github.com/actions/checkout/releases)
+  - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+  - [Commits](https://github.com/actions/checkout/compare/v5...v7)
+
+  ---
+  updated-dependencies:
+  - dependency-name: actions/checkout
+    dependency-version: '7'
+    dependency-type: direct:production
+    update-type: version-update:semver-major
+  ...
+
 * Bump github/codeql-action from 4.37.3 to 4.37.4. [dependabot[bot]]
 
   Bumps [github/codeql-action](https://github.com/github/codeql-action) from 4.37.3 to 4.37.4.
