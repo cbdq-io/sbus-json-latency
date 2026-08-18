@@ -5,6 +5,8 @@
 
 ### Fix
 
+* Acknowledge vulnerabilities in the base image. [Ben Dalling]
+
 * Bump Trivy action. [Ben Dalling]
 
 * Skip gitchangelog for dependabot. [Ben Dalling]
