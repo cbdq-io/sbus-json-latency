@@ -13,6 +13,21 @@
 
 ### Build
 
+* Bump github/codeql-action from 4.37.6 to 4.37.7. [dependabot[bot]]
+
+  Bumps [github/codeql-action](https://github.com/github/codeql-action) from 4.37.6 to 4.37.7.
+  - [Release notes](https://github.com/github/codeql-action/releases)
+  - [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+  - [Commits](https://github.com/github/codeql-action/compare/v4.37.6...v4.37.7)
+
+  ---
+  updated-dependencies:
+  - dependency-name: github/codeql-action
+    dependency-version: 4.37.7
+    dependency-type: direct:production
+    update-type: version-update:semver-patch
+  ...
+
 * Bump github/codeql-action from 4.37.4 to 4.37.6. [dependabot[bot]]
 
   Bumps [github/codeql-action](https://github.com/github/codeql-action) from 4.37.4 to 4.37.6.
