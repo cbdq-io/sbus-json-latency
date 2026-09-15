@@ -5,6 +5,10 @@
 
 ### Fix
 
+* Resolve CVE-2026-78408. [Ben Dalling]
+
+* Correct periodic Trivy scan workflow. [Ben Dalling]
+
 * Acknowledge vulnerabilities in the base image. [Ben Dalling]
 
 * Bump Trivy action. [Ben Dalling]
